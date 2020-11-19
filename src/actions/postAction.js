@@ -103,11 +103,17 @@ export const searchmovies = (query)=>{
             try {
                 const response = await fetch(url);
                 const data  = await response.json();
-               // console.log(data,"in post action");
+                // console.log(data,"in post action");
                // setMovies(data.results);
-    dispatch(SearchMovies(data.results))
+               
+                   
+                dispatch(SearchMovies(data.results))
+               
+              
+    
                // console.log("movies",movies)
             }catch(err){
+                alert('Not Found')
                 console.error(err);
             }
         }

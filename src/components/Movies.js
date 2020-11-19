@@ -41,10 +41,16 @@ return(
         <button className="button"  onClick={()=>{upcomingmovies()}}>Upcoming Movies</button>
 
 
-
-        {movies.filter(movie=>movie.poster_path).map((movie)=>{
+        {/* filter(movie=>movie.poster_path) */}
+        {movies.length!==0?   movies.map((movie)=>{
             return(
-            <Movie movie={movie} key={movie.id}/>  ) })}
+                
+                
+                    <Movie movie={movie} key={movie.id} /> 
+                
+             ) }):<h1> No Matches Found</h1>}
+      
+            
 
     </>
     
