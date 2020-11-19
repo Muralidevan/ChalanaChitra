@@ -43,17 +43,11 @@ return(
 
         {/* filter(movie=>movie.poster_path) */}
         {movies.length!==0?   movies.map((movie)=>{
-            return(
-                
-                
+            return(                             
                     <Movie movie={movie} key={movie.id} /> 
                 
-             ) }):<h1> No Matches Found</h1>}
-      
-            
-
-    </>
-    
+             ) }):<h1> No Matches Found</h1>}               
+    </>    
 )
 }
 
