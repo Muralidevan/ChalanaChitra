@@ -7,11 +7,11 @@ import configureStore from './ConfigStore/Store'
 
 const Store = configureStore()
 
-console.log(Store.getState())
+// console.log(Store.getState())
 
-Store.subscribe(() => {
-	console.log(Store.getState())
-})
+// Store.subscribe(() => {
+// 	console.log(Store.getState())
+// })
 
 
 
