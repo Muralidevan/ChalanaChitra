@@ -11,14 +11,14 @@ function App() {
       <div>
         <nav className="navbar">
           <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
+          {/* <Link to="/login">Login</Link> */}
           <Link to="/movies">Movies</Link>
 
 
         </nav>
         <section className="container">
           <Route path="/" component={Home} exact={true}/>
-          <Route path="/login" component={Login} exact={true}/>
+          {/* <Route path="/login" component={Login} exact={true}/> */}
           <Route path="/movies" component={searchMovies} exact={true}/>
         </section>
     
